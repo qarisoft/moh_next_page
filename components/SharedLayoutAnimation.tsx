@@ -58,6 +58,7 @@ export default function SharedLayoutAnimation({ data }: {
                     <Child desc={selectedTab.data.desc} title={selectedTab.data.title} />
 
                 </motion.div>
+                
                 <motion.div
                     className="overflow-hidden h-full w-full absolute "
                     key={selectedTab ? selectedTab.label : "empty"}
