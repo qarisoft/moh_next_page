@@ -68,7 +68,7 @@ function NavBar() {
       <div className="absolute top-0 z-20  w-full h-14 grid grid-cols-4 items-center">
         
         <div className="borde flex-1 ps-8">
-          <Image src={'/logo.png'} alt="" width={50} height={40} />
+          <Image src={'logo.png'} alt="" width={50} height={40} />
         </div>
 
 
