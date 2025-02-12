@@ -40,8 +40,8 @@ export default function SharedLayoutAnimation({ data }: {
                     key={selectedTab ? selectedTab.label + "1" : "empty"}
                     initial={{ y: 0, opacity: 0 }}
                     animate={{ y: 0, opacity: 0, zIndex: 12 }}
-                    exit={{ x: 220, opacity: [0.9, 0.5, 0.4, 0.3, 0], zIndex: 13 }}
-                    transition={{ duration: 0.6, ease: 'easeIn' }}
+                    exit={{ x: 320, opacity: [0.9, 0], zIndex: 13 }}
+                    transition={{ duration: 1, ease: 'easeOut' }}
                     className={cls}
                 >
                     <Child desc={selectedTab.data.desc} title={selectedTab.data.title} />
@@ -63,7 +63,7 @@ export default function SharedLayoutAnimation({ data }: {
                     key={selectedTab ? selectedTab.label : "empty"}
                     initial={{ y: first ? 0: -5, opacity: 1 }}
                     animate={{ y: 0, opacity: 1, zIndex: 10 }}
-                    exit={{ y: [30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 350], opacity: [1, 0.6, 0.5, 0], zIndex: 11 }}
+                    exit={{ y: [90, 120, 190, 250, 300, 350, 410, 460, 510, 560, 600], opacity: [1, 0.6, 0.5, 0], zIndex: 11 }}
                     transition={{ duration: 0.6, ease: 'easeInOut' }}
                 >
                     <div
