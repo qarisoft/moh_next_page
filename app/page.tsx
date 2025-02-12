@@ -4,6 +4,8 @@ import SharedLayoutAnimation from "@/components/SharedLayoutAnimation";
 import { useState } from "react";
 import Link from "next/link";
 // import Logo from 'public/logo.png'
+import img11 from '../public/image/11.jpg'
+import img33 from '../public/image/33.jpg'
 export default function Home() {
   const [data, setdata] = useState([
     {
@@ -15,7 +17,7 @@ export default function Home() {
         "....................... ........... .................."+
         "....................... ........... .................."+
         ""
-      }, label: "Tomato", img: '/image/11.jpg'
+      }, label: "Tomato", img: img11
     },
     {
       data: {
@@ -26,7 +28,7 @@ export default function Home() {
           "....................... ........... .................."+
           "....................... ........... .................."+
           ""
-      }, label: "Lettuce", img: '/image/33.jpg'
+      }, label: "Lettuce", img: img33
     },
     // { icon: "🧀", label: "Cheese", img: '/image/44.jpg' },
   ])
@@ -61,14 +63,14 @@ const navItems= [
   },
 ];
 
-
+import logo from '../public/logo.png'
 function NavBar() {
   return <>
   <div className="absolute top-0 z-20 bg-slate-50 opacity-30 w-full h-14"></div>
       <div className="absolute top-0 z-20  w-full h-14 grid grid-cols-4 items-center">
         
         <div className="borde flex-1 ps-8">
-          <Image src={'logo.png'} alt="" width={50} height={40} />
+          <Image src={logo} alt="" width={50} height={40} />
         </div>
 
 

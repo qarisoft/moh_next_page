@@ -2,10 +2,11 @@
 
 import { AnimatePresence } from "motion/react"
 import * as motion from "motion/react-client"
+import Image, { StaticImageData } from "next/image"
 import { useEffect, useState } from "react"
 
 export default function SharedLayoutAnimation({ data }: {
-    data: { data: ChildParams, label: string, img: string }[]
+    data: { data: ChildParams, label: string, img: string|StaticImageData }[]
 }) {
 
     const [selectedT, setSelectedTab] = useState(0)
@@ -67,7 +68,7 @@ export default function SharedLayoutAnimation({ data }: {
                     exit={{ y: [90, 120, 190, 250, 300, 350, 410, 460, 510, 560, 600], opacity: [1, 0.6, 0.5, 0], zIndex: 11 }}
                     transition={{ duration: 0.6, ease: 'easeInOut' }}
                 >
-                    <div
+                    <Image src={selectedTab.img} alt=""
                         className="overflow-hidden"
                         style={{
                             height: "100%",
@@ -76,7 +77,7 @@ export default function SharedLayoutAnimation({ data }: {
                             backgroundPosition: "center",
                             backgroundImage: `url(${selectedTab.img})`
                         }}
-                    ></div>
+                    />
                 </motion.div>
             </AnimatePresence>
         </main>
