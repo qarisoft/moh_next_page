@@ -58,7 +58,7 @@ export default function SharedLayoutAnimation({ data }: {
                     <Child desc={selectedTab.data.desc} title={selectedTab.data.title} />
 
                 </motion.div>
-                
+
                 <motion.div
                     className="overflow-hidden h-full w-full absolute "
                     key={selectedTab ? selectedTab.label : "empty"}
@@ -100,20 +100,5 @@ function Child({ title, desc }: ChildParams) {
     </article>
 }
 
-/**
- * ==============   Styles   ================
- */
 
 
-const iconContainer: React.CSSProperties = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flex: 1,
-    overflow: "hidden",
-}
-
-const icon: React.CSSProperties = {
-    fontSize: 128,
-    overflow: "hidden",
-}

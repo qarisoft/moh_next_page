@@ -1,8 +1,7 @@
 "use client"
 import Image from "next/image";
 import SharedLayoutAnimation from "@/components/SharedLayoutAnimation";
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { useState } from "react";
 import Link from "next/link";
 // import Logo from 'public/logo.png'
 export default function Home() {
