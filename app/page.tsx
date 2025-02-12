@@ -59,7 +59,7 @@ const navItems= [
   },
   {
       label: "اتصل بنا",
-      href: "/contact",
+      href: "#",
   },
 ];
 
